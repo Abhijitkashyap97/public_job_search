@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <header><a href="../" style="color:black; "><h1> CareerConnect </h1></a></header>
+   <div class="abcd"> <form action="../login_recruiter/login" method="post"><br>
+        <label>Enter your name:</label><br>
+        <input type="text" name="name"><br>
+        <label>Enter your email</label><br>
+        <input type="email" name="email"><br>
+        <label>Enter your password</label><br>
+        <input type="password" name="pass"><br>
+        <input type="submit" name="Enter" value="Enter"><br>
+        <hr>
+        <h3>OR</h3></form>
+        <a href="../signup_recruiter" ><button>Sign-Up</button></a>
+    </div>
+</body>
+</html>
+<style>
+ body{
+  background: linear-gradient(135deg, rgba(173, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333333;
+  }
+  .abcd {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  form {
+    text-align: center;
+  }
+  form label {
+    font-weight: bold;
+    color: #333333;
+  }
+  form button {
+    cursor: pointer;
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  form input[type="submit"] {
+    background-color: #cccccc;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+</style>
