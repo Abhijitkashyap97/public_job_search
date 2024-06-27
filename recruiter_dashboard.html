@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <form action ="../post_jobs" method="post" enctype="multipart/form-data">
+        <input type="text" placeholder="Enter Job Title" name='title'><br>
+        <input type="text" placeholder="Enter Job Description" name="job_description" style="width: 80%; padding: 10px;overflow: scroll; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;"><br>
+        <input type="text" placeholder="Enter Qualifications Required" name="qualifications" style="width: 80%; padding: 10px;overflow: scroll; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;"><br>
+        <div class="checkbox-container" style="font-family: Arial, sans-serif; margin-top: 20px;">
+          <label>
+              <input type="checkbox" class="option-checkbox" onchange="toggleOptions()"> Select Option
+          </label>
+          <div class="options-dropdown" style="display: none; margin-top: 10px;">
+              <select class="option-select" name="dropdownOptions">
+                  <option value="Delhi">Delhi</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Bangalore">Bangalore</option>
+                  <option value="WFH">WFH</option>
+              </select>
+          </div>
+      </div>
+        <p>Enter company logo</p>
+        <input type="file" placeholder="Enter you company logo" name="image_employer" style="width: 80%; padding: 10px;overflow: scroll; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;">
+        <input type='submit' value='Submit'></form><br><p>See latest applicants</p>
+        <form action ="../see_applicants_jobs" method="get">
+        <input type="submit" value='See'></form>
+</body>
+</html>
+<style>
+    body {
+        background: linear-gradient(135deg, rgba(173, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+    font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+    }
+  
+    form input[type="text"],
+    form input[type="submit"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+  
+    form input[type="submit"] {
+      background-color: #007bff;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    form input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  
+    p {
+      font-size: 1.2em;
+      color: #333333;
+      margin: 20px 0 10px;
+      text-align: center;
+    }
+  </style>
+  <script>
+  function toggleOptions() {
+    var checkbox = document.querySelector('.option-checkbox');
+    var dropdown = document.querySelector('.options-dropdown');
+
+    if (checkbox.checked) {
+        dropdown.style.display = 'block';
+    } else {
+        dropdown.style.display = 'none';
+    }
+}
+  </script>
