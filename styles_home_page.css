@@ -182,3 +182,100 @@ h2 {
   font-size: 1.05em;
   color: #2a2828;
 }
+
+@media screen and (max-width: 1200px) {
+  .featured-jobs {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .featured-jobs {
+    min-width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .input-group {
+    display: none; /* Hide search bar on smaller screens */
+  }
+
+  .job-card {
+    padding: 15px;
+  }
+
+  .job-card h4 {
+    font-size: 1.3em;
+  }
+
+  .job-card p {
+    font-size: 1em;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .phone-number {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .cta-buttons button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  .featured-jobs {
+    padding: 15px;
+  }
+
+  .featured-jobs h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .job-card {
+    padding: 10px;
+  }
+
+  .job-card i {
+    font-size: 24px;
+  }
+
+  .job-card h4 {
+    font-size: 1.2em;
+  }
+
+  .job-card p {
+    font-size: 0.9em;
+  }
+
+  a:hover {
+    font-size: 15px;
+  }
+}
+
